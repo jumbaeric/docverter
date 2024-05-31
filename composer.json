@@ -1,0 +1,15 @@
+{
+    "name": "jumbaeric/rtf2pdf",
+    "description": "A PHP class for converting RTF documents to PDF using Dompdf.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^7.4",
+        "dompdf/dompdf": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "RTF2PDF\\": "src/"
+        }
+    }
+}
