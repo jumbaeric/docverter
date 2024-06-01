@@ -5,26 +5,26 @@ namespace DocVerter;
 use Dompdf\Dompdf;
 use Dompdf\Options;
 
-class RTF2PDFConverter
+class Markdown2PDFConverter
 {
-    protected $rtfContent;
+    protected $markdownContent;
     protected $pdfFilePath;
 
-    public function __construct($rtfContent, $pdfFilePath)
+    public function __construct($markdownContent, $pdfFilePath)
     {
-        $this->rtfContent = $rtfContent;
+        $this->markdownContent = $markdownContent;
         $this->pdfFilePath = $pdfFilePath;
     }
 
     public function convert()
     {
         $dompdf = new Dompdf($this->getDompdfOptions());
-        $dompdf->loadHtml($this->rtfContent);
+        $dompdf->loadHtml($this->markdownContent);
         $dompdf->render();
 
         file_put_contents($this->pdfFilePath, $dompdf->output());
 
-        return "RTF to PDF conversion completed successfully.";
+        return "Markdown to PDF conversion completed successfully.";
     }
 
     protected function getDompdfOptions()

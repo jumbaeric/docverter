@@ -1,15 +1,28 @@
 {
-    "name": "jumbaeric/rtf2pdf",
-    "description": "A PHP class for converting RTF documents to PDF using Dompdf.",
+    "name": "jumbaeric/docverter",
+    "description": "A versatile PHP package for document conversion between various formats.",
     "type": "library",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Eric Jumba",
+            "email": "your@email.com"
+        }
+    ],
     "require": {
-        "php": "^7.4",
-        "dompdf/dompdf": "^1.0"
+        "spatie/pdf-to-text": "^2.3",
+        "spatie/pdf-to-image": "^2.3",
+        "dompdf/dompdf": "^1.0",
+        "phpoffice/phpspreadsheet": "^1.18",
+        "phpoffice/phpword": "^0.22",
+        "spatie/image": "^1.0",
+        "spatie/pdf": "^1.0",
+        "spatie/pdf-parser": "^2.1",
+        "spatie/temporary-directory": "^1.0"
     },
     "autoload": {
         "psr-4": {
-            "RTF2PDF\\": "src/"
+            "DocVerter\\": "src/"
         }
     }
 }
