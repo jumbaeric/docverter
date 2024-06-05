@@ -24,5 +24,7 @@
         "psr-4": {
             "DocVerter\\": "src/"
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
