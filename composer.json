@@ -10,6 +10,8 @@
         }
     ],
     "require": {
+        "php": ">=7.4",
+        "ext-imagick": "*",
         "spatie/pdf-to-text": "^1.52",
         "spatie/pdf-to-image": "^2.3",
         "dompdf/dompdf": "^1.0",
