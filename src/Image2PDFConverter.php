@@ -3,7 +3,6 @@
 namespace DocVerter;
 
 use Spatie\Image\Image;
-use Spatie\Pdf\Pdf;
 
 class Image2PDFConverter
 {

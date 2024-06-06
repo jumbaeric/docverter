@@ -16,8 +16,6 @@
         "phpoffice/phpspreadsheet": "^1.15",
         "phpoffice/phpword": "^0.17",
         "spatie/image": "^1.7",
-        "spatie/pdf": "^1.0",
-        "spatie/pdf-parser": "^2.1",
         "spatie/temporary-directory": "^1.0"
     },
     "autoload": {
